@@ -1,0 +1,41 @@
+{
+  "name": "heyvid-ai-typescript-toolkit",
+  "version": "0.1.0",
+  "description": "A TypeScript toolkit with prompt presets and workflow helpers for creating AI video and image briefs with HeyVid.",
+  "author": "HeyVid community",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://heyvid.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenlee123/heyvid-ai-typescript-toolkit.git"
+  },
+  "keywords": [
+    "heyvid",
+    "heyvid-ai",
+    "ai-video",
+    "ai-image",
+    "text-to-video",
+    "image-to-video",
+    "typescript",
+    "prompt-engineering",
+    "creative-tools"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
